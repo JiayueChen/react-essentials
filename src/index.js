@@ -19,9 +19,11 @@ ReactDOM.render(
     //     <AppTwo/>
     // </React.Fragment>,
 
-    <>
-        <App />
-        <AppTwo/>
-    </>,
+    // <>
+    //     <App />
+    //     <AppTwo/>
+    // </>,
+
+    <App />,
     document.getElementById("root")
 );
