@@ -16,7 +16,7 @@ function Main(props) {
       {/* use JS camelcase for css style  */}
       <ul style={{textAlign: "left"}}>
         {props.dishes.map((dish)=> (
-        <li key={dish.id}>{dish.title}</li>
+          <li key={dish.id}>{dish.title}</li>
         ))}
       </ul>
     </section>
@@ -38,16 +38,13 @@ const dishes = [
   "minestrone"
 ];
 
-dishes.map((dish) => 
-  console.log(dish)
-);
-
 const dishObjects = dishes.map((dish, i) => ({id: i, title: dish}))
 
 function App() {
   return (
     <div className="App">
       <Header name="Cindy"/>
+      {/* pass dishobject with key as id */}
       <Main adjective="amazing" dishes={dishObjects}/>
       <Footer year={new Date().getFullYear()}/>
     </div>
